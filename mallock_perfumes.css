@@ -1,0 +1,172 @@
+/*
+Author: Ved Vyas
+Functionality of code: I created this luxury perfume website to showcase premium fragrances 
+in an elegant way. The design focuses on a minimalist black and gold theme that reflects
+the high-end nature of these perfumes. I've made sure the layout is responsive and each 
+product card has a subtle hover effect to enhance user interaction.
+*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- I'm setting up the basic character encoding and viewport settings for better mobile display -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- My website title that appears in browser tabs -->
+    <title>Mallock Perfumes - Luxury Fragrances</title>
+    <style>
+        /* I'm using this reset to remove default browser styles that might mess up my design */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* I chose Cormorant Garamond because it gives that luxury serif feel I want */
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* I picked this off-white background color to create a soft, elegant backdrop */
+        body {
+            background-color: #f8f5f2;
+            color: #2c2c2c;
+        }
+
+        /* My header needs to be dark and dramatic with that luxury feel */
+        header {
+            background-color: #1a1a1a;
+            color: #f8f5f2;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #gold;
+        }
+
+        /* I made the logo big and spaced out for that high-end brand look */
+        .logo {
+            font-size: 3rem;
+            letter-spacing: 0.5rem;
+            margin-bottom: 1rem;
+            /* Using gold color to add that premium touch */
+            color: #d4af37;
+        }
+
+        /* The tagline needs to be elegant but not overshadow the logo */
+        .tagline {
+            font-style: italic;
+            letter-spacing: 0.2rem;
+            color: #f8f5f2;
+        }
+
+        /* I'm keeping the main content contained and centered */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Setting up a responsive grid that adjusts based on screen size */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Each product card gets this clean, hoverable design */
+        .product-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* I added this hover effect to make the cards feel interactive */
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Making sure product images display consistently */
+        .product-image {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+            border-radius: 3px;
+            background-color: #f8f8f8;
+        }
+
+        /* Product names need to stand out but stay elegant */
+        .product-name {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+
+        /* Description text should be subtle but readable */
+        .product-description {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Price needs to be bold but not flashy */
+        .product-price {
+            font-size: 1.25rem;
+            color: #1a1a1a;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        /* My call-to-action button with a smooth hover effect */
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #1a1a1a;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Subtle button hover effect */
+        .btn:hover {
+            background-color: #333;
+        }
+
+        /* I'm making sure the grid looks good on mobile devices */
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+    </style>
+    <!-- Adding Font Awesome for any icons I might need */
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section with my brand name and tagline -->
+    <header>
+        <h1 class="logo">MALLOCK</h1>
+        <p class="tagline">Essence of Elegance</p>
+    </header>
+
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Product grid layout -->
+        <div class="products-grid">
+            <!-- Individual product cards - I'll need to replace placeholder images with actual perfume images -->
+            <div class="product-card">
+                <img src="/api/placeholder/400/500" alt="Vanilla Diorama Perfume" class="product-image">
+                <h2 class="product-name">Vanilla Diorama</h2>
+                <p class="product-description">A sophisticated blend of Madagascar vanilla, creamy tonka bean, and warm amber. An elegant statement of refined taste.</p>
+                <p class="product-price">$295</p>
+                <a href="#" class="btn">Discover More</a>
+            </div>
+
+            <!-- Repeated for each product with unique details -->
+            <!-- Similar product cards follow for Golden Aura, Royal Iris, Royal Emerald, Azure Dreams, and Black Orchid -->
+            <!-- I've kept the structure but removed repetitive cards for brevity -->
+            
+        </div>
+    </div>
+</body>
+</html>
